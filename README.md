@@ -17,7 +17,7 @@
     npm install
 
 ##### Start the Node server 
-    npm run server
+    npm run start
 
 ##### Run test
     npm test
