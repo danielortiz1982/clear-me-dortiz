@@ -2,7 +2,7 @@ const express = require('express')
 const server = express()
 const db = require('./utilities/db-connect')
 const pub = `${__dirname}/public/`
-
+const PORT = process.env.PORT || 3500
 server.use(express.static(pub))
 server.use(express.json())
 
@@ -15,7 +15,7 @@ server.get('/', (req, res) => {
 
 
 if(!module.parent) {
-    server.listen('3500', () => console.log('Server running on post 3500'))
+    server.listen(PORT, () => console.log('Server running on post 3500'))
  }else{
     server.listen('3000', () => console.log('Server running on post 3000'))
  }
