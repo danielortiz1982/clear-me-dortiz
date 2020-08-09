@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const database  = 'clear-me-api'
 const appPort   = 27017
-const dbConnection = `mongodb://danielortiz1982:l3inad1982@ds157895.mlab.com:57895/clear-me-api`
+const dbConnection = `mongodb://sample:l3inad1982@ds157895.mlab.com:57895/clear-me-api`
 
 mongoose.connect(dbConnection, {
     useNewUrlParser: true,
@@ -11,3 +11,5 @@ mongoose.connect(dbConnection, {
 })
 
 //mongodb://<danielortiz1982>:<dbpassword>@ds157895.mlab.com:57895/clear-me-api
+
+///mongodb://<dbuser>:<dbpassword>@ds157895.mlab.com:57895/clear-me-api 
